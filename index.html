@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musuc player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="music-player">
+        <div class="player-header">
+            <div class="player-title">
+                <i class="fas fa-music"></i>
+                <h1>Music Player</h1>
+            </div>
+            <div class="player-controls">
+                <div class="window-btn close-btn"></div>
+                <div class="window-btn minimize-btn"></div>
+                <div class="window-btn maximize-btn"></div>
+            </div>
+        </div>
+        
+        <div class="player-body">
+            <div class="now-playing">
+                <div class="album-art">
+                    <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Album Art">
+                </div>
+                
+                <div class="song-info">
+                    <h2 class="song-title">Arcade</h2>
+                    <p class="song-artist">Duncan Laurence</p>
+                    <p class="song-album">Hurry Up, We're Dreaming</p>
+                    
+                    <div class="song-progress">
+                        <div class="progress-info">
+                            <span class="current-time">1.02</span>
+                            <span class="total-time">4:04</span>
+                        </div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="player-controls-main">
+                <button class="control-btn shuffle-btn" title="Shuffle">
+                    <i class="fas fa-random"></i>
+                </button>
+                <button class="control-btn prev-btn" title="Previous">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button class="control-btn play-pause" title="Play/Pause">
+                    <i class="fas fa-pause"></i>
+                </button>
+                <button class="control-btn next-btn" title="Next">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+                <button class="control-btn repeat-btn" title="Repeat">
+                    <i class="fas fa-redo"></i>
+                </button>
+            </div>
+            
+            <div class="volume-section">
+                <i class="fas fa-volume-down volume-icon"></i>
+                <input type="range" class="volume-slider" min="0" max="100" value="70">
+                <i class="fas fa-volume-up volume-icon"></i>
+            </div>
+            
+            <div class="playlist">
+                <div class="playlist-header">
+                    <h3>Playlist</h3>
+                    <button class="add-song-btn">
+                        <i class="fas fa-plus"></i> Add Song
+                    </button>
+                </div>
+                
+                <ul class="playlist-songs">
+                    <li class="playlist-item active">
+                        <div class="song-number">01</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Arcade</div>
+                            <div class="playlist-song-artist"> Duncan Laurence</div>
+                        </div>
+                        <div class="song-duration">4:04</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">02</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Beleiver</div>
+                            <div class="playlist-song-artist">Imagine Dragons</div>
+                        </div>
+                        <div class="song-duration">3:22</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">03</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Badass</div>
+                            <div class="playlist-song-artist">Aniruth Ravichandhar</div>
+                        </div>
+                        <div class="song-duration">3:24</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">04</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Power House</div>
+                            <div class="playlist-song-artist">Aniruth Ravichandhar</div>
+                        </div>
+                        <div class="song-duration">2:58</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">05</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Urugi Urugi</div>
+                            <div class="playlist-song-artist">Rio Raj</div>
+                        </div>
+                        <div class="song-duration">2:21</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">06</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Oorum Blood</div>
+                            <div class="playlist-song-artist">Sai Abiyankar</div>
+                        </div>
+                        <div class="song-duration">3:58</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">07</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Aalaporaan Thamizhan</div>
+                            <div class="playlist-song-artist">A.R.Rahmaan</div>
+                        </div>
+                        <div class="song-duration">2:47</div>
+                    </li>
+                    <li class="playlist-item">
+                        <div class="song-number">08</div>
+                        <div class="song-details">
+                            <div class="playlist-song-title">Kalyana Maalai</div>
+                            <div class="playlist-song-artist">Ilaiyaraja</div>
+                        </div>
+                        <div class="song-duration">3:50</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="player-footer">
+            <div class="player-status">
+                <i class="fas fa-headphones"></i>
+                <span>Now Playing:Arcade - Duncan Laurence</span>
+            </div>
+            <div class="player-settings">
+                <button class="settings-btn" title="Settings">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
